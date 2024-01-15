@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700;800&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none; border: none;
+    transition: all .2s linear;
+}
+
+:root{
+    --main-color: #FF5400;
+    --bg-color: #fff;
+    --text-color: #131318;
+    --paragraph-color: #5A5A5D;
+    
+    --Button-paragraph-color: #13131880;
+    --nav-color: #424247;
+
+    --first-card-color: rgba(251, 181, 99, 0.05);
+    --second-card-color: rgba(41, 206, 246, 0.05);
+}
+
+
+/* ================== shared styles ================== */
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--paragraph-color);
+}
+
+.btn-primary{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--bg-color);
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    background: var(--main-color);
+    border: .1px solid transparent;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+.btn-primary i{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+}
+
+.btn-primary:hover{
+    border: 1px solid var(--main-color);
+    background: transparent;
+    color: var(--main-color);
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+/* ================== header styles ================== */
+
+.header{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    z-index: 1000;
+}
+
+.header .container .logo{
+    display: flex;
+    align-items: center;
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--text-color)
+}
+
+.header .container .logo span{
+    color: var(--main-color);
+}
+
+.header .container .logo img{
+    padding-right: 1rem;
+}
+
+.header .container ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.header .container .navbar{
+    gap: 2.75rem;
+}
+
+.header .container .navbar a{
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--nav-color);
+}
+
+.header .container .navbar a.active,
+.header .container .navbar a:hover{
+    color: var(--main-color);
+}
+
+#menu-bar{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/* ================== home styles ================== */
+
+.home{
+    margin-top: 9rem;
+}
+
+.home .container{
+    height: 500px;
+    width: 100%;
+    border-radius: 1rem;
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('assets/home.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .container .content h1{
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--bg-color);
+}
+
+.home .container .content p{
+    max-width: 42.25rem;
+    margin-top: 1.5rem;
+    color: var(--bg-color);
+}
+
+.home .container .content .home-btns{
+    padding: 1rem;
+    border-radius: .5rem;
+    background: rgba(255, 255, 255, 0.30);
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.home .container .content .home-btns #where-go .btn{
+    font-size: 1rem;
+    font-weight: 400;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.home .container .content .home-btns #when .btn{
+    font-size: 1rem;
+    font-weight: 400;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.home .container .content .home-btns #select-type .btn{
+    font-size: 1rem;
+    font-weight: 400;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.home .container .content .home-btns #find-now .btn{
+    font-size: 1rem;
+    font-weight: 400;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+
+.home .container .content .home-btns .home-btn{
+    width: 10.875rem;
+    height: 3.25rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem;
+    border: 1px solid transparent;
+    background: var(--bg-color);
+    color: var(--paragraph-color);
+    cursor: pointer;
+}
+
+.home .container .content .home-btns .home-btn:hover{
+    background: transparent;
+    border: 1px solid var(--bg-color);
+    color: var(--bg-color);
+}
+
+.home .container .content .home-btns .home-btn i{
+    font-size: 1.5rem;
+}
+
+.home .container .content .home-btns  #find-now .home-btn{
+    background: var(--main-color);
+    color: var(--bg-color);
+    justify-content: center;
+    gap: .5rem;
+}
+
+.home .container .content .home-btns  #find-now .home-btn:hover{
+    background: transparent;
+    border: 1px solid var(--bg-color);
+    color: var(--bg-color);
+}
+
+
+
+/* ================== popular styles ================== */
+
+.popular{
+    margin: 6.25rem 0;
+}
+
+.popular .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular .container .content p{
+    margin-top: 1.4rem;
+    max-width: 33rem;
+}
+
+.popular .container .content li{
+    margin-top: 1.5rem;
+    max-width: 30rem;
+    position: relative;
+    left: 3%;
+    color: var(--paragraph-color);
+}
+
+.popular .container .content .btn-primary{
+    margin-top: 2rem;
+}
+
+.popular .container .pop-img img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* ================== destinations styles ================== */
+
