@@ -24,6 +24,8 @@
 
     --first-card-color: rgba(251, 181, 99, 0.05);
     --second-card-color: rgba(41, 206, 246, 0.05);
+
+    --footer-color: #1313180D;
 }
 
 
@@ -106,7 +108,7 @@ p{
     align-items: center;
     font-size: 2.25rem;
     font-weight: 800;
-    color: var(--text-color)
+    color: var(--text-color);
 }
 
 .header .container .logo span{
@@ -150,7 +152,7 @@ p{
 /* ================== home styles ================== */
 
 .home{
-    margin-top: 9rem;
+    margin-top: 8rem;
 }
 
 .home .container{
@@ -687,5 +689,231 @@ p{
     margin-bottom: 1.5rem;
 }
 
+.deals3 .btn{
+    margin-top: 3rem;
+}
+
+.deals3 .btn .btn-primary{
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
+
+/* ================== perfect place styles ================== */
+
+.place{
+    margin: 6.25rem 0;
+}
+
+.place .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.place .container .content{
+    max-width: 33rem;
+}
+
+.place .container .content p{
+    margin: 1.5rem 0;
+    columns: var(--paragraph-color);
+}
+
+.place .container .content li{
+    margin: 1.5rem 0;
+    transform: translateX(1.5rem);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--paragraph-color);
+}
+
+.place .container .video-img{
+    width: 38.125rem;
+    height: 26.5rem;
+    background-image: url('assets/bangladesh.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--bg-color);
+    text-align: center;
+}
+
+
+
+
+/* ================== newsletter styles ================== */
+
+.newsletter .container{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.newsletter .container .left-form{
+    width: 29.625rem;
+    height: 26.375rem;
+    border-radius: 1rem;
+    border: 1px solid var(--main-color);
+    padding: 2.5rem;
+}
+
+.newsletter .container .left-form p{
+    margin: 1rem 0;
+}
+
+.newsletter .container .left-form hr{
+    height: 1px;
+    width: 100%;
+    background: rgba(19, 19, 24, 0.10);
+}
+
+.newsletter .container .left-form .form{
+    display: block;
+    margin-top: 1.5rem;
+}
+
+.newsletter .container .left-form .form input{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--paragraph-color);
+    background: rgba(19, 19, 24, 0.05);
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+}
+
+.newsletter .container .left-form .form input[type='submit']{
+    background: var(--main-color);
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--bg-color);
+}
+
+.newsletter .container .left-form .form input[type='submit']:hover{
+    background: transparent;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+.newsletter .container .right-img .img{
+    width: 42rem;
+    height: 26.375rem;
+    background-image: url('assets/bangladesh.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.newsletter .container .right-img .card{
+    background: var(--main-color);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 12%; right: 1%;
+    transform: rotate(-18deg);
+}
+
+.newsletter .container .right-img .card span{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--bg-color);
+}
+
+.newsletter .container .right-img .card h3{
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--bg-color);
+    margin-top: .5rem;
+}
+
+
+
+
+/* ================== footer styles ================== */
+
+.footer{
+    margin-top: 6.25rem;
+    height: 500px;
+    width: 100%;
+    background: var(--footer-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer .content .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.footer .content .logo .img{
+    margin-right: 1rem;
+}
+
+.footer .content .logo h3{
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+.footer .content .logo h3 span{
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--main-color);
+}
+
+.footer .content .social-icons{
+    margin: 2rem;
+}
+
+.footer .content .social-icons i{
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 50%;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.footer .content .social-icons i:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
+.footer .content hr{
+    width: 100%;
+    height: 1px;
+    background: rgba(19, 19, 24, 0.10);
+}
+
+.footer .content span{
+    margin-top: 3rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--paragraph-color);
+}
