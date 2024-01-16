@@ -297,3 +297,395 @@ p{
 
 /* ================== destinations styles ================== */
 
+.destination{
+    text-align: center;
+}
+
+.destination p{
+    margin-top: 1.5rem;
+}
+
+.destination .container{
+    margin-top: 3rem;
+}
+
+.destination .container .top{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.destination .container .top .div1{
+    width: 35.8125rem;
+    height: 18.75rem;
+    border-radius: 1rem;
+    background-image: url('assets/maldive.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--bg-color);
+}
+
+.destination .container .top .div2{
+    width: 35.8125rem;
+    height: 18.75rem;
+    border-radius: 1rem;
+    background-image: url('assets/indonesia.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--bg-color);
+}
+
+.destination .container .middle{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.destination .container .middle .div1{
+    width: 23.375rem;
+    height: 17.875rem;
+    border-radius: 1rem;
+    background-image: url('assets/srilanka.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--bg-color);
+}
+
+.destination .container .middle .div2{
+    width: 29.625rem;
+    height: 17.875rem;
+    border-radius: 1rem;
+    background-image: url('assets/north-america.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--bg-color);
+}
+
+.destination .container .middle .div3{
+    width: 17.125rem;
+    height: 17.875rem;
+    border-radius: 1rem;
+    background-image: url('assets/kashmir.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--bg-color);
+}
+
+.destination .container .bottom{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.destination .container .bottom .div1{
+    width: 29.5625rem;
+    height: 18.75rem;
+    border-radius: 1rem;
+    background-image: url('assets/bangladesh.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--bg-color);
+}
+
+.destination .container .bottom .div2{
+    width: 42.0625rem;
+    height: 18.75rem;
+    border-radius: 1rem;
+    background-image: url('assets/bandorban.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--bg-color);
+}
+
+
+
+
+/* ================== why styles ================== */
+
+.why{
+    margin-top: 6.25rem;
+}
+
+.why .content{
+    max-width: 40rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.why .content h2{
+    margin-bottom: 1.5rem;
+}
+
+.why .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.why .container .top{
+    gap: 1.5rem;
+    margin-top: 3rem;
+    display: flex;
+}
+
+.why .container .top .card{
+    width: 35.8125rem;
+    height: 17.75rem;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: var(--first-card-color);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.why .container .top .card h3{
+    margin: 1.5rem 0;
+}
+
+.why .container .top .card:nth-child(2){
+    background: var(--second-card-color);
+}
+
+.why .container .bottom .card{
+    margin-top: 1.5rem;
+    width: 35.8125rem;
+    height: 17.75rem;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: var(--first-card-color);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.why .container .bottom .card h3{
+    margin: 1.5rem 0;
+}
+
+
+
+/* ================== deals & discount styles ================== */
+
+.deals{
+    margin-top: 6.25rem;
+}
+
+.deals .heading-text{
+    max-width: 40rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.deals .heading-text h2{
+    margin-bottom: 1.5rem;
+}
+
+.deals .container{
+    margin-top: 3rem;
+    width: 100%;
+    height: 31.25rem;
+    background-image: url('assets/d&d1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 3.5rem;
+}
+
+.deals .container .content{
+    width: 36.1875rem;
+    height: 24.3125rem;
+    border-radius: 1rem;
+    border: 2px solid var(--bg-color);
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 3.12rem;
+}
+
+.deals .container .content .top-icons a{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--paragraph-color);
+    margin-right: 1rem;
+}
+
+.deals .container .content .top-icons a i{
+    color: var(--main-color);
+    margin-right: .5rem;
+}
+
+.deals .container .content h3{
+    margin: 1.5rem 0;
+}
+
+.deals .container .content p{
+    margin-bottom: 1.5rem;
+}
+
+.deals .container .content span{
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+/* ================== deals & discount 2 styles ================== */
+
+
+.deals2 .container{
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 31.25rem;
+    background-image: url('assets/d&d2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 3.5rem;
+}
+
+.deals2 .container .content{
+    width: 36.1875rem;
+    height: 24.3125rem;
+    border-radius: 1rem;
+    border: 2px solid var(--bg-color);
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 3.12rem;
+}
+
+.deals2 .container .content .top-icons a{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--paragraph-color);
+    margin-right: 1rem;
+}
+
+.deals2 .container .content .top-icons a i{
+    color: var(--main-color);
+    margin-right: .5rem;
+}
+
+.deals2 .container .content h3{
+    margin: 1.5rem 0;
+}
+
+.deals2 .container .content p{
+    margin-bottom: 1.5rem;
+}
+
+.deals2 .container .content span{
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+/* ================== deals & discount 3 styles ================== */
+
+
+.deals3 .container{
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 31.25rem;
+    background-image: url('assets/d&d1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 3.5rem;
+}
+
+.deals3 .container .content{
+    width: 36.1875rem;
+    height: 24.3125rem;
+    border-radius: 1rem;
+    border: 2px solid var(--bg-color);
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 3.12rem;
+}
+
+.deals3 .container .content .top-icons a{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--paragraph-color);
+    margin-right: 1rem;
+}
+
+.deals3 .container .content .top-icons a i{
+    color: var(--main-color);
+    margin-right: .5rem;
+}
+
+.deals3 .container .content h3{
+    margin: 1.5rem 0;
+}
+
+.deals3 .container .content p{
+    margin-bottom: 1.5rem;
+}
+
+.deals3 .container .content span{
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+}
+
+
+
