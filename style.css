@@ -93,6 +93,7 @@ p{
     position: fixed;
     top: 0; left: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 .header .container{
@@ -100,7 +101,6 @@ p{
     align-items: center;
     justify-content: space-between;
     padding: 2rem 0;
-    z-index: 1000;
 }
 
 .header .container .logo{
@@ -147,6 +147,11 @@ p{
     display: none;
 }
 
+#menu-bar:hover{
+    color: var(--main-color);
+}
+
+
 
 
 /* ================== home styles ================== */
@@ -191,34 +196,6 @@ p{
     align-items: center;
     gap: 1.5rem;
 }
-
-.home .container .content .home-btns #where-go .btn{
-    font-size: 1rem;
-    font-weight: 400;
-    background: var(--bg-color);
-    color: var(--text-color);
-}
-
-.home .container .content .home-btns #when .btn{
-    font-size: 1rem;
-    font-weight: 400;
-    background: var(--bg-color);
-    color: var(--text-color);
-}
-.home .container .content .home-btns #select-type .btn{
-    font-size: 1rem;
-    font-weight: 400;
-    background: var(--bg-color);
-    color: var(--text-color);
-}
-
-.home .container .content .home-btns #find-now .btn{
-    font-size: 1rem;
-    font-weight: 400;
-    background: var(--bg-color);
-    color: var(--text-color);
-}
-
 
 .home .container .content .home-btns .home-btn{
     width: 10.875rem;
@@ -282,7 +259,7 @@ p{
     margin-top: 1.5rem;
     max-width: 30rem;
     position: relative;
-    left: 3%;
+    left: 4%;
     color: var(--paragraph-color);
 }
 
@@ -293,6 +270,10 @@ p{
 .popular .container .pop-img img{
     width: 100%;
     height: auto;
+}
+
+.popular .container .pop-img{
+    margin-top: 1.5rem;
 }
 
 
@@ -320,7 +301,7 @@ p{
     width: 35.8125rem;
     height: 18.75rem;
     border-radius: 1rem;
-    background-image: url('assets/maldive.png');
+    background-image: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('assets/maldive.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -332,11 +313,16 @@ p{
     color: var(--bg-color);
 }
 
+.destination .container .top .div1:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
 .destination .container .top .div2{
     width: 35.8125rem;
     height: 18.75rem;
     border-radius: 1rem;
-    background-image: url('assets/indonesia.png');
+    background-image: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('assets/indonesia.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -346,6 +332,10 @@ p{
     font-size: 1.75rem;
     font-weight: 800;
     color: var(--bg-color);
+}
+.destination .container .top .div2:hover{
+    transform: scale(1.03);
+    cursor: pointer;
 }
 
 .destination .container .middle{
@@ -358,7 +348,7 @@ p{
     width: 23.375rem;
     height: 17.875rem;
     border-radius: 1rem;
-    background-image: url('assets/srilanka.png');
+    background-image: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('assets/srilanka.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -368,13 +358,18 @@ p{
     font-size: 1.75rem;
     font-weight: 800;
     color: var(--bg-color);
+}
+
+.destination .container .middle .div1:hover{
+    transform: scale(1.03);
+    cursor: pointer;
 }
 
 .destination .container .middle .div2{
     width: 29.625rem;
     height: 17.875rem;
     border-radius: 1rem;
-    background-image: url('assets/north-america.png');
+    background-image: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('assets/north-america.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -386,11 +381,16 @@ p{
     color: var(--bg-color);
 }
 
+.destination .container .middle .div2:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
 .destination .container .middle .div3{
     width: 17.125rem;
     height: 17.875rem;
     border-radius: 1rem;
-    background-image: url('assets/kashmir.png');
+    background-image: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('assets/kashmir.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -400,6 +400,11 @@ p{
     font-size: 1.75rem;
     font-weight: 800;
     color: var(--bg-color);
+}
+
+.destination .container .middle .div3:hover{
+    transform: scale(1.03);
+    cursor: pointer;
 }
 
 .destination .container .bottom{
@@ -412,7 +417,7 @@ p{
     width: 29.5625rem;
     height: 18.75rem;
     border-radius: 1rem;
-    background-image: url('assets/bangladesh.png');
+    background-image: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('assets/bangladesh.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -424,11 +429,16 @@ p{
     color: var(--bg-color);
 }
 
+.destination .container .bottom .div1:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
 .destination .container .bottom .div2{
     width: 42.0625rem;
     height: 18.75rem;
     border-radius: 1rem;
-    background-image: url('assets/bandorban.png');
+    background-image: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('assets/bandorban.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -438,6 +448,11 @@ p{
     font-size: 1.75rem;
     font-weight: 800;
     color: var(--bg-color);
+}
+
+.destination .container .bottom .div2:hover{
+    transform: scale(1.03);
+    cursor: pointer;
 }
 
 
@@ -473,8 +488,6 @@ p{
 }
 
 .why .container .top .card{
-    width: 35.8125rem;
-    height: 17.75rem;
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: var(--first-card-color);
     padding: 2rem;
@@ -533,6 +546,7 @@ p{
     align-items: center;
     justify-content: end;
     padding: 3.5rem;
+    border-radius: 1rem;
 }
 
 .deals .container .content{
@@ -558,7 +572,7 @@ p{
 }
 
 .deals .container .content h3{
-    margin: 1.5rem 0;
+    margin: 1rem 0;
 }
 
 .deals .container .content p{
@@ -570,7 +584,7 @@ p{
     font-size: 1.25rem;
     font-weight: 800;
     color: var(--main-color);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -591,6 +605,7 @@ p{
     align-items: center;
     justify-content: start;
     padding: 3.5rem;
+    border-radius: 1rem;
 }
 
 .deals2 .container .content{
@@ -616,7 +631,7 @@ p{
 }
 
 .deals2 .container .content h3{
-    margin: 1.5rem 0;
+    margin: 1rem 0;
 }
 
 .deals2 .container .content p{
@@ -628,7 +643,7 @@ p{
     font-size: 1.25rem;
     font-weight: 800;
     color: var(--main-color);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -649,6 +664,7 @@ p{
     align-items: center;
     justify-content: end;
     padding: 3.5rem;
+    border-radius: 1rem;
 }
 
 .deals3 .container .content{
@@ -674,7 +690,7 @@ p{
 }
 
 .deals3 .container .content h3{
-    margin: 1.5rem 0;
+    margin: 1rem 0;
 }
 
 .deals3 .container .content p{
@@ -686,7 +702,7 @@ p{
     font-size: 1.25rem;
     font-weight: 800;
     color: var(--main-color);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .deals3 .btn{
@@ -735,7 +751,7 @@ p{
 .place .container .video-img{
     width: 38.125rem;
     height: 26.5rem;
-    background-image: url('assets/bangladesh.png');
+    background-image:  url('assets/bangladesh.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -808,37 +824,8 @@ p{
     border: 1px solid var(--main-color);
 }
 
-.newsletter .container .right-img .img{
-    width: 42rem;
-    height: 26.375rem;
-    background-image: url('assets/bangladesh.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-
-.newsletter .container .right-img .card{
-    background: var(--main-color);
-    text-align: center;
-    padding: 2rem;
-    border-radius: 1rem;
-    position: absolute;
-    bottom: 12%; right: 1%;
-    transform: rotate(-18deg);
-}
-
-.newsletter .container .right-img .card span{
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: var(--bg-color);
-}
-
-.newsletter .container .right-img .card h3{
-    font-size: 2rem;
-    font-weight: 800;
-    color: var(--bg-color);
-    margin-top: .5rem;
+.newsletter .container .right-img .img img{
+    width: 100%;
 }
 
 

@@ -1,6 +1,250 @@
-@media (max-width: 991px){
+@media screen and (max-width: 1220px) {
     
+    .header{
+        padding: 1rem 1.25rem;
+    }
+
     section{
-        padding: 0 1rem;
+        padding: 1rem 1.25rem;
+    }
+
+    /* popular responsive */
+    .popular .container{
+        flex-direction: column;
+    }
+
+    /* place responsive */
+    .place .container{
+        flex-direction: column;
+    }
+
+    .place .container .video-img{
+        margin-top: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+
+    /* header responsive */
+    .header #menu-bar{
+        display: block;
+    }
+
+    .header .container .navbar{
+        display: none;
+    }
+
+    /* home responsive */
+    .home .container .content h1{
+        font-size: 2.5rem;
+    }
+
+    .home .container .content p{
+        max-width: 30rem;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+    }
+
+    .home .container .content .home-btns{
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .home .container .content .home-btns .home-btn{
+        width: 40rem;
+        height: 3.25rem;
+    }
+
+    /* popular responsive */
+    .popular .container .content{
+        width: 100%;
+    }
+
+    .popular .container .pop-img{
+        width: 100%;
+    }
+
+    /* why choose us responsive */
+    .why .container .top{
+        flex-direction: column;
+    }
+    .why .container .bottom .card{
+        width: auto;
+        height: auto;
+    }
+
+    /* newsletter responsive */
+    .newsletter .container{
+        flex-direction: column;
+    }
+
+    /* footer responsive */
+    .footer .content{
+        max-width: 20rem;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /* home responsive */
+    .home .container .content .home-btns .home-btn{
+        width: 30rem;
+        height: 3.25rem;
+    }
+
+    /* destination responsive */
+    .destination .container .top{
+        flex-direction: column;
+    }
+
+    .destination .container .middle{
+        flex-direction: column;
+    }
+
+    .destination .container .bottom{
+        flex-direction: column;
+    }
+
+    .destination .container .top .div1,
+    .destination .container .top .div2,
+    .destination .container .middle .div1,
+    .destination .container .middle .div2,
+    .destination .container .middle .div3,
+    .destination .container .bottom .div1,
+    .destination .container .bottom .div2{
+        width: auto;
+    }
+
+    /* simple responsive */
+    .place .container .video-img{
+        width: 100%;
+    }
+
+    /* newsletter responsive */
+    .newsletter .container .left-form{
+        width: 100%;
+    }
+
+    .newsletter .container .right-img .img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    h2{
+        font-size: 1.25rem;
+    }
+
+    h3{
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    p{
+        font-size: .875rem;
+    }
+
+    li{
+        font-size: .875rem;
+    }
+
+    .btn-primary{
+        font-size: 1rem;
+        font-weight: 700;
+        padding: .7rem 1.5rem;
+    }
+
+    /* header responsive */
+    .header .container .logo{
+        font-size: 1rem;
+    }
+
+    /* home responsive */
+    .home .container{
+        padding: 17rem 0;
+    }
+
+    .home .container .content{
+        padding: 2rem;
+    }
+
+    .home .container .content h1{
+        font-size: 1.5rem;
+    }
+
+    .home .container .content p{
+        max-width: 20rem;
+    }
+
+    .home .container .content .home-btns{
+        flex-direction: column;
+        gap: .5rem;
+        padding: 1rem;
+    }
+
+    .home .container .content .home-btns .home-btn{
+        width: 20rem;
+    }
+
+    /* destinations responsive */
+    .destination .container .top .div1,
+    .destination .container .top .div2,
+    .destination .container .middle .div1,
+    .destination .container .middle .div2,
+    .destination .container .middle .div3,
+    .destination .container .bottom .div1,
+    .destination .container .bottom .div2{
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    /* deals & des responsive */
+    .deals .container,
+    .deals2 .container,
+    .deals3 .container{
+        height: auto;
+        padding: 1rem;
+        padding-top: 11.5rem;
+    }
+
+    .deals .container .content,
+    .deals2 .container .content,
+    .deals3 .container .content{
+        height: auto;
+        width: auto;
+    }
+
+    /* footer responsive */
+    .footer .content .logo h3{
+        font-size: 1.5rem;
+    }
+    .footer .content .logo h3 span{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+
+    /* home responsive */
+    .home .container .content .home-btns .home-btn{
+        width: 15rem;
+    }
+    .home .container .content .home-btns{
+        padding: 1rem;
+    }
+
+    /* deals & discount responsive */
+    .deals .container .content span,
+    .deals2 .container .content span,
+    .deals3 .container .content span{
+        font-size: 1rem;
+        font-weight: 700;
     }
 }
